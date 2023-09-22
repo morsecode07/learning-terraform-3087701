@@ -30,7 +30,6 @@ module "vpc" {
     Environment = "dev"
   }
 }
-}
 
 resource "aws_instance" "blog" {
   ami           = data.aws_ami.app_ami.id
